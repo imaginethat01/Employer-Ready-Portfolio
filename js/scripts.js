@@ -29,3 +29,4 @@
                 toggleIcon.className = 'menuIcon';
             }
         });
+
