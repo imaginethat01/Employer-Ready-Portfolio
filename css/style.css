@@ -18,6 +18,14 @@
       body {
         background-color: #12171A;
         font-family: Lato, Helvetica, Arial, sans-serif;
+
+        background-image: url('cog.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 57% 50%;
+      
+        
+
       }
       
       a {
@@ -362,9 +370,14 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    height: 300px;
+    height: 380px;
     margin: 20px auto;
     width: 500px;
+    min-width: 240px;
+
+
+
+
     overflow: hidden;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -437,9 +450,10 @@
 }
 
 .profile-card .profile-bio p {
-    color: #999;
-    font-size: 14px;
-    font-style: italic;
+   
+    color:  #80CBC4;
+    font-size: 16px;
+    font-style: italic, bold;
     text-align: center;
     font-family:  "Open Sans";
 }
@@ -450,6 +464,7 @@
     margin: 0 auto;
     padding: 0;
     position: relative;
+    bottom: 5%;
     width: 160px;
 }
 
@@ -541,7 +556,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 .emailform {
-	width:500px;
+  width:500px;
+  min-width: 240px;
 	margin:0 auto;
   position: relative;
   top: 15%;
@@ -563,6 +579,7 @@
 }
 
 #contact h4 {
+  color: #80CBC4;
 	margin:5px 0 15px;
 	display:block;
 	font-size:13px;
@@ -640,7 +657,7 @@ fieldset {
 	display: inline-block;;
   position: relative;
 
-  left: 15%;
+  left: 17%;
   width: 250px;
   height: 250px;
   padding: 0;
@@ -676,7 +693,7 @@ fieldset {
 	font-weight: 600;
 	line-height: 1.4em;
 	color: #086FA1;
-	background: #fff;
+	background:  #80CBC4;
 	overflow: hidden;
 	
 	-webkit-transition: all 0.3s ease;
@@ -824,23 +841,23 @@ fieldset {
 
   
   #bod {
-    width: 230px;
-    height:230px;
+    width: 215px;
+    height:215px;
     position: relative;
-    right: 40%;
+    right: 42%;
     margin: 20px auto;
     border-radius:30%;
     border: solid 10px darkslategray;
     overflow:hidden;
     z-index:10000;
-    box-shadow: 0 0 200px darkslategray;
+    box-shadow: 0 0 180px darkslategray;
   }
   
   .spoke {
     background-color: grey;
     position: absolute;
-    height: 175px;
-    width:30px;
+    height: 165px;
+    width:25px;
     margin-left: -15px;
     margin-top: -12.5px;
     left: 50%;
@@ -863,8 +880,8 @@ fieldset {
   .cog {
     position:absolute;
     background-color: grey;
-    width: 150px;
-    height: 150px;
+    width: 142px;
+    height: 142px;
     border-radius: 50%;
     z-index: 10;
     animation: spin 5s infinite linear;
@@ -872,8 +889,8 @@ fieldset {
   .cog + .cog {
     animation-delay:.19s;
     animation: spin2 5s infinite linear;
-    margin-top: 160px;
-    margin-left:30px;
+    margin-top: 142px;
+    margin-left: 2px;
   }
   .cog + .cog + .cog {
     animation: spin 5s infinite linear;
@@ -883,8 +900,8 @@ fieldset {
   
   .hole {
     position: absolute;
-    width: 130px;
-    height: 130px;
+    width: 122px;
+    height: 122px;
     margin-left: 10px;
     margin-top: 10px;
     background-color: black;
