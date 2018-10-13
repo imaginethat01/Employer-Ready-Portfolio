@@ -22,7 +22,9 @@
         background-image: url('cog.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: 57% 50%;
+        background-position: 50% 50%;
+
+        overflow-x: hidden;
       
         
 
@@ -178,7 +180,7 @@
           cursor: pointer;
           display: block;
           position: fixed;
-          right: 50px;
+          right: 30px;
           top: 20px;
           height: 23px;
           width: 27px;
