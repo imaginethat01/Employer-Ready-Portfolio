@@ -44,7 +44,7 @@
       #navbar {
         background: #263238;
         color: #80CBC4;
-        position: fixed;
+        position: sticky;
         top: 0;
         height: 60px;
         line-height: 60px;
