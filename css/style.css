@@ -1,19 +1,19 @@
     
     * {
-    border: 0;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
+
+
 	-webkit-font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
 	font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
+  text-rendering:optimizeLegibility;
     
       }
+
+      .jumbotron { background-color: #1B2327;
+                    height: 125px;  }
+
+    
       
       body {
         background-color: #12171A;
@@ -23,10 +23,11 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: 51% 50%;
-
-        overflow-x: hidden;
-      
         
+        overflow-x: hidden;
+       
+        
+       
 
       }
       
@@ -49,10 +50,14 @@
         height: 60px;
         line-height: 60px;
         width: 100%;
-
         z-index: 1001;
+        display: flex;
+  align-items: center;
+  justify-content: center 
       }
       
+
+
       p3 { 
 
       
@@ -181,7 +186,7 @@
           cursor: pointer;
           display: block;
           position: fixed;
-          right: 40px;
+          right: 30px;
           top: 20px;
           height: 23px;
           width: 27px;
@@ -285,12 +290,14 @@
           transform: translate3d(0, 5px, 0) rotate(135deg);
           transition-delay: 0.1s;
           transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          background-color: white;
         }
       
         .menuIcon.toggle .icon-bars::before {
           top: 0;
           transition-delay: 0.1s;
           opacity: 0;
+          background: white;
         }
       
         .menuIcon.toggle .icon-bars::after {
@@ -298,6 +305,7 @@
           transform: translate3d(0, -10px, 0) rotate(-270deg);
           transition-delay: 0.1s;
           transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          color: white;
         }
       
         .menuIcon.toggle .icon-bars.overlay {
@@ -305,6 +313,7 @@
           opacity: 0;
           -webkit-transition: all 0s ease 0s;
           transition: all 0s ease 0s;
+          background: white;
         }
       }
       
@@ -376,7 +385,7 @@
     height: 420px;
     margin: 20px auto;
     width: 380px;
-    min-width: 220px;
+    min-width: 200px;
 
 
 
@@ -387,8 +396,8 @@
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     position: relative;
-   
-    top: 30%;
+    right: 2%;
+  
 
 
     -webkit-transition: all 0.5s;
@@ -396,6 +405,9 @@
     -o-transition: all 0.5s;
     transition: all 0.5s;
     background-color: #37474F;
+
+
+    
 }
 
 .profile-card header {
@@ -457,7 +469,7 @@
 .profile-card .profile-bio p {
    
     color:  #80CBC4;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic, bold;
     text-align: center;
     font-family:  "Open Sans";
@@ -565,7 +577,7 @@
   min-width: 220px;
 	margin:0 auto;
   position: relative;
-  top: 15%;
+  right: 2%;
  
 }
 
@@ -660,16 +672,19 @@ fieldset {
 
 
 .galleryItem {
-	display: inline-block;;
+	display: inline-block;
   position: relative;
 
- left: 10%;
+ left: 9%;
   width: 250px;
   height: 250px;
   padding: 0;
   margin: 0 20px;
-
 }
+
+
+
+
 
 .galleryItem img {
 	width: 100%;
@@ -699,7 +714,7 @@ fieldset {
 	font-weight: 600;
 	line-height: 1.4em;
 	color: #086FA1;
-	background:  #80CBC4;
+	background:  white;
 	overflow: hidden;
 	
 	-webkit-transition: all 0.3s ease;
@@ -745,7 +760,7 @@ fieldset {
 
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
-    min-width: 100%;
+    max-width: 100%;
     position: relative;
   left: 3%;
     height: auto;
