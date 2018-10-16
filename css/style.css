@@ -339,32 +339,71 @@
         z-index: 1000;
       }
       
-      .overlay-menu ul, .overlay-menu li {
-        display: block;
-        position: relative;
+
+      * Fixed sidenav, full height */
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
       }
       
-      .overlay-menu li a {
+      /* Style the sidenav links and the dropdown button */
+      .sidenav a, .dropdown-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
         display: block;
-        font-size: 1.8em;
-        letter-spacing: 4px;
-      /*   opacity: 0; */
-        padding: 10px 0;
-        text-align: right;
-        text-transform: uppercase;
-        -webkit-transition: color 0.3s ease;
-        transition: color 0.3s ease;
-      /*   -webkit-transition: 0.2s opacity 0.2s ease-out;
-        transition: 0.2s opacity 0.2s ease-out; */
+        border: none;
+        background: none;
+        width:100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
       }
       
-      .overlay-menu li a:hover,
-      .overlay-menu li a:active {
-        color: rgb(28, 121, 184);
-        -webkit-transition: color 0.3s ease;
-        transition: color 0.3s ease;
+      /* On mouse-over */
+      .sidenav a:hover, .dropdown-btn:hover {
+        color: #f1f1f1;
+      }
+      
+      /* Main content */
+      .main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        font-size: 20px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      /* Add an active class to the active dropdown button */
+      .active {
+        background-color: #263238;
+        color: white;
+      }
+      
+      /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+      .dropdown-container {
+        display: none;
+        background-color: #1B2327;
+        padding-left: 8px;
+      }
+      
+      /* Optional: Style the caret down icon */
+      .fa-caret-down {
+        float: right;
+        padding-top: 5%;
+        padding-left: 12px;
+        color: white;
       }
 
+
+      
+    
 
       
 
@@ -383,7 +422,7 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     height: 420px;
-    margin: 20px auto;
+    margin: auto;
     width: 380px;
     min-width: 200px;
 
@@ -396,7 +435,7 @@
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     position: relative;
-    right: 1%;
+    right: 3%;
   
 
 
@@ -578,7 +617,7 @@
   min-width: 220px;
 	margin:0 auto;
   position: relative;
-  right: 1%;
+  right: 3%;
  
 }
 
@@ -674,12 +713,12 @@ fieldset {
 .galleryItem {
 	display: inline-block;
   position: relative;
+  left: 7%;
 
- left: 9%;
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   padding: 0;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 
@@ -756,6 +795,7 @@ fieldset {
 }
 
 
+  
 
 
 /* STYLES SPECIFIC TO FOOTER  */
@@ -900,6 +940,43 @@ fieldset {
     transform: rotateZ(90deg);
   }
   
+  #bod {
+    width: 215px;
+    height:215px;
+    position: relative;
+    right: 41%;
+    margin: 20px auto;
+    border-radius:30%;
+    border: solid 10px darkslategray;
+    overflow:hidden;
+    z-index:999;
+    box-shadow: 0 0 180px darkslategray;
+  }
+  
+  .spoke {
+    background-color: grey;
+    position: absolute;
+    height: 165px;
+    width:25px;
+    margin-left: -15px;
+    margin-top: -12.5px;
+    left: 50%;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  
+  .spoke + .spoke {
+    transform: rotateZ(45deg);
+  }
+  
+  .spoke + .spoke + .spoke {
+    transform: rotateZ(-45deg);
+  }
+  
+  .spoke + .spoke + .spoke + .spoke {
+    transform: rotateZ(90deg);
+  }
+  
   .cog {
     position:absolute;
     background-color: grey;
@@ -953,3 +1030,179 @@ fieldset {
   }
   
   
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+
+
+  .display {
+    position: absolute;
+    top: 67%;
+    left: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width:  150px;
+   
+
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cog2 {
+    transform-origin: 477.5px 226.75px;
+    animation: spin 8s linear infinite;
+    height: 150px;
+    width:  150px;
+  }
+  
+
+ 
+ .gears {
+   position: absolute;
+   top: 72%;
+  
+    width: 350px;
+    margin: 100px auto;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    color: #fff;
+    text-shadow: 1px 1px 2px #5F868A
+ }
+ 
+ .gears .big {
+   
+    width: 200px;
+    height: 200px;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: rotate 1.5s linear infinite;
+    -moz-animation: rotate 1.5s linear infinite;
+    -o-animation: rotate 1.5s linear infinite;
+    animation: rotate 1.5s linear infinite
+ }
+ 
+ .gears .small {
+   position: absolute;
+   bottom: 83%;
+    width: 70px;
+    height: 70px;
+    margin-left: -6px;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: reverseRotate 1.5s linear infinite;
+    -moz-animation: reverseRotate 1.5s linear infinite;
+    -o-animation: reverseRotate 1.5s linear infinite;
+    animation: reverseRotate 1.5s linear infinite;
+ }
+ 
+ 
+ @-webkit-keyframes rotate {
+    0% {
+       -webkit-transform: rotate(0);
+       transform: rotate(0);
+    }
+    100% {
+       -webkit-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+ }
+ 
+ 
+ @-moz-keyframes rotate {
+    0% {
+       -moz-transform: rotate(0);
+       transform: rotate(0);
+    }
+    100% {
+       -moz-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+ }
+ 
+ 
+ @-o-keyframes rotate {
+    0% {
+       -o-transform: rotate(0);
+       transform: rotate(0);
+    }
+    100% {
+       -o-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+ }
+ 
+ 
+ @keyframes rotate {
+    0% {
+       -webkit-transform: rotate(0);
+       -moz-transform: rotate(0);
+       -o-transform: rotate(0);
+       transform: rotate(0);
+    }
+    100% {
+       -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+ }
+ 
+ @-webkit-keyframes reverseRotate {
+    0% {
+       -webkit-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -webkit-transform: rotate(0);
+       transform: rotate(0);
+    }
+ }
+ 
+ @-moz-keyframes reverseRotate {
+    0% {
+       -moz-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -moz-transform: rotate(0);
+       transform: rotate(0);
+    }
+ }
+ 
+ @-o-keyframes reverseRotate {
+    0% {
+       -o-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -o-transform: rotate(0);
+       transform: rotate(0);
+    }
+ }
+ 
+ @keyframes reverseRotate {
+    0% {
+       -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+       transform: rotate(180deg);
+    }
+    100% {
+       -webkit-transform: rotate(0);
+       -moz-transform: rotate(0);
+       -o-transform: rotate(0);
+       transform: rotate(0);
+    }
+ }
+ 
