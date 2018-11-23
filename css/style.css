@@ -667,7 +667,7 @@ fieldset {
 }
 
 #contact textarea {
-	height:100px;
+	height:200px;
 	max-width: 95%;
   resize:none;
 }

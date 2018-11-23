@@ -72,7 +72,7 @@
                         <a href="https://imaginethat01.github.io/imaginethat01.github.io-Hangman-Game/"  rel="noopener noreferrer" target="_blank">.js Hangman </a>
                         <a href="https://imaginethat01.github.io/imaginethat.github.io-BluesTrivia/" rel="noopener noreferrer" target="_blank">.js Blues Hangman</a>
                         <a href="https://nerdscraper.herokuapp.com/" rel="noopener noreferrer" target="_blank" >Express / MySQL Scraper</a>
-                        <a href="#">Link 4</a>
+                        <a href="https://samepageapp.herokuapp.com/">Full Stack Group</a>
                      
                     </div>
                     </div>
@@ -161,27 +161,31 @@
 <div class="col-sm-4"> 
  
 <div class="emailform">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="mailto:anthonyj.manenti@gmail.com" method="post" enctype="text/plain">
     <p3>Quick Contact</p3>
     <h4>Please use the form below to leave a contact</h4>
     <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    <input placeholder="Representing Employer" type="text" tabindex="1" name="name" required><br>
     </fieldset>
+
     <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    <input placeholder="Email Contact" type="text" tabindex="2"  name="mail" required><br>  
     </fieldset>
+
+
     <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    <input placeholder="Telephone Contact" type="tel" tabindex="3"  name="phone" required><br>   
     </fieldset>
+
     <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+    <textarea type="text" name="message"  tabindex="4" required></textarea><br>
     </fieldset>
+
     <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    <button  type="submit" id="contact-submit " data-submit="...Sending">Submit</button>
     </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
+
+
   </form>
 </div>
 
