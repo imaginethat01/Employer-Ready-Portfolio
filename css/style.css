@@ -733,6 +733,8 @@ fieldset {
 }
 
 .caption {
+
+  text-align: center;
 	position: relative;
   overflow: hidden;
 	display: inline-block;
@@ -754,7 +756,7 @@ fieldset {
 	font-weight: 600;
 	line-height: 1.4em;
 	color: #086FA1;
-	background:  white;
+	background: #37474F;
 	overflow: hidden;
 	
 	-webkit-transition: all 0.3s ease;
@@ -776,7 +778,7 @@ fieldset {
 	font-size: .9em;
 	font-weight: 400;
 	line-height: 1.4em;
-	color: #fff;
+	color: rgb(99, 91, 91);
 	background: #222;
 	overflow: hidden;
 	
