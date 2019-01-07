@@ -906,18 +906,7 @@ fieldset {
 
 
   
-  #bod {
-    width: 215px;
-    height:215px;
-    position: relative;
-    right: 41%;
-    margin: 20px auto;
-    border-radius:30%;
-    border: solid 10px darkslategray;
-    overflow:hidden;
-    z-index:999;
-    box-shadow: 0 0 180px darkslategray;
-  }
+
   
   .spoke {
     background-color: grey;
@@ -947,7 +936,7 @@ fieldset {
     width: 215px;
     height:215px;
     position: relative;
-    right: 41%;
+    right: 25%;
     margin: 20px auto;
     border-radius:30%;
     border: solid 10px darkslategray;
