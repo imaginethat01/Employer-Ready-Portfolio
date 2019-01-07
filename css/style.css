@@ -584,10 +584,10 @@
 /*  CHANGES  ON HOVER  */
 
 .profile-card:hover {
-    height: 420px;
+    height: 480px;
 }
 .profile-card:hover header {
-    height: 200px;
+    height: 180px;
 }
 
 .profile-card:hover header h1,
@@ -600,6 +600,8 @@
 }
 
 .profile-card:hover  .profile-social-links li {
+    position: relative;
+  
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
