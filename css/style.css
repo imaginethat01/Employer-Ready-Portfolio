@@ -19,7 +19,7 @@
         background-color: #12171A;
         font-family: Lato, Helvetica, Arial, sans-serif;
 
-        background-image: url('cog.png');
+        background-image: url('codingheroimage.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: 51% 50%;
@@ -725,9 +725,6 @@ fieldset {
 }
 
 
-
-
-
 .galleryItem img {
 	width: 100%;
 	height: 100%;
@@ -804,15 +801,22 @@ fieldset {
 
 
 /* STYLES SPECIFIC TO FOOTER  */
+
+
+
 .footer {
-    max-width: 100%;
-    position: relative;
-  left: 3%;
-    height: auto;
-    background-color: #070617;
+        background-color: #12171A;
+     
+    background-image: url('cog.png');
+    background-repeat: no-repeat;
+    background-position-x: 52%;
+    background-position-y: 3%;
+    
+
+
   }
   .footer .col {
-    width: 190px;
+    width: 220px;
     height: auto;
     float: left;
     box-sizing: border-box;
@@ -827,7 +831,8 @@ fieldset {
     font-size: 12px;
     line-height: 17px;
     padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
+    color: #80CBC4;
+   
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.250em;
@@ -909,295 +914,4 @@ fieldset {
 
   
 
-  
-  .spoke {
-    background-color: grey;
-    position: absolute;
-    height: 165px;
-    width:25px;
-    margin-left: -15px;
-    margin-top: -12.5px;
-    left: 50%;
-    border-radius: 5px;
-    z-index: 10;
-  }
-  
-  .spoke + .spoke {
-    transform: rotateZ(45deg);
-  }
-  
-  .spoke + .spoke + .spoke {
-    transform: rotateZ(-45deg);
-  }
-  
-  .spoke + .spoke + .spoke + .spoke {
-    transform: rotateZ(90deg);
-  }
-  
-  #bod {
-    width: 215px;
-    height:215px;
-    position: relative;
-    right: 25%;
-    margin: 20px auto;
-    border-radius:30%;
-    border: solid 10px darkslategray;
-    overflow:hidden;
-    z-index:999;
-    box-shadow: 0 0 180px darkslategray;
-  }
-  
-  .spoke {
-    background-color: grey;
-    position: absolute;
-    height: 165px;
-    width:25px;
-    margin-left: -15px;
-    margin-top: -12.5px;
-    left: 50%;
-    border-radius: 5px;
-    z-index: 10;
-  }
-  
-  .spoke + .spoke {
-    transform: rotateZ(45deg);
-  }
-  
-  .spoke + .spoke + .spoke {
-    transform: rotateZ(-45deg);
-  }
-  
-  .spoke + .spoke + .spoke + .spoke {
-    transform: rotateZ(90deg);
-  }
-  
-  .cog {
-    position:absolute;
-    background-color: grey;
-    width: 142px;
-    height: 142px;
-    border-radius: 50%;
-    z-index: 10;
-    animation: spin 5s infinite linear;
-  }
-  .cog + .cog {
-    animation-delay:.19s;
-    animation: spin2 5s infinite linear;
-    margin-top: 142px;
-    margin-left: 2px;
-  }
-  .cog + .cog + .cog {
-    animation: spin 5s infinite linear;
-    margin-top: 65px;
-    margin-left:165px;
-  }
-  
-  .hole {
-    position: absolute;
-    width: 122px;
-    height: 122px;
-    margin-left: 10px;
-    margin-top: 10px;
-    background-color: black;
-    border-radius: 50%;
-    z-index: 3000;
-    box-shadow: inset 0 0 90px darkslategray;
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes spin2 {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
-  
-  
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
-
-
-  .display {
-    position: absolute;
-    top: 67%;
-    left: 26%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    width:  150px;
-   
-
-  }
-  
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .cog2 {
-    transform-origin: 477.5px 226.75px;
-    animation: spin 8s linear infinite;
-    height: 150px;
-    width:  150px;
-  }
-  
-
- 
- .gears {
-   position: absolute;
-   top: 52%;
-  
-    width: 350px;
-    margin: 100px auto;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial;
-    color: #fff;
-    text-shadow: 1px 1px 2px #5F868A;
-    z-index: -2;
- }
- 
- .gears .big {
-   
-    width: 200px;
-    height: 200px;
-    -webkit-transform-origin: center;
-    -moz-transform-origin: center;
-    -o-transform-origin: center;
-    transform-origin: center;
-    -webkit-animation: rotate 1.5s linear infinite;
-    -moz-animation: rotate 1.5s linear infinite;
-    -o-animation: rotate 1.5s linear infinite;
-    animation: rotate 1.5s linear infinite
- }
- 
- .gears .small {
-   position: absolute;
-   bottom: 83%;
-    width: 70px;
-    height: 70px;
-    margin-left: -6px;
-    -webkit-transform-origin: center;
-    -moz-transform-origin: center;
-    -o-transform-origin: center;
-    transform-origin: center;
-    -webkit-animation: reverseRotate 1.5s linear infinite;
-    -moz-animation: reverseRotate 1.5s linear infinite;
-    -o-animation: reverseRotate 1.5s linear infinite;
-    animation: reverseRotate 1.5s linear infinite;
- }
- 
- 
- @-webkit-keyframes rotate {
-    0% {
-       -webkit-transform: rotate(0);
-       transform: rotate(0);
-    }
-    100% {
-       -webkit-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
- }
- 
- 
- @-moz-keyframes rotate {
-    0% {
-       -moz-transform: rotate(0);
-       transform: rotate(0);
-    }
-    100% {
-       -moz-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
- }
- 
- 
- @-o-keyframes rotate {
-    0% {
-       -o-transform: rotate(0);
-       transform: rotate(0);
-    }
-    100% {
-       -o-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
- }
- 
- 
- @keyframes rotate {
-    0% {
-       -webkit-transform: rotate(0);
-       -moz-transform: rotate(0);
-       -o-transform: rotate(0);
-       transform: rotate(0);
-    }
-    100% {
-       -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
- }
- 
- @-webkit-keyframes reverseRotate {
-    0% {
-       -webkit-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
-    100% {
-       -webkit-transform: rotate(0);
-       transform: rotate(0);
-    }
- }
- 
- @-moz-keyframes reverseRotate {
-    0% {
-       -moz-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
-    100% {
-       -moz-transform: rotate(0);
-       transform: rotate(0);
-    }
- }
- 
- @-o-keyframes reverseRotate {
-    0% {
-       -o-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
-    100% {
-       -o-transform: rotate(0);
-       transform: rotate(0);
-    }
- }
- 
- @keyframes reverseRotate {
-    0% {
-       -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
-       transform: rotate(180deg);
-    }
-    100% {
-       -webkit-transform: rotate(0);
-       -moz-transform: rotate(0);
-       -o-transform: rotate(0);
-       transform: rotate(0);
-    }
- }
  
