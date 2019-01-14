@@ -1,20 +1,23 @@
     
     * {
-
-
 	-webkit-font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
 	font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
+  text-rendering:optimizeLegibility; }
+
+
+  p3 { 
+    font-family: 'Alex Brush', cursive; 
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 1px rgb(133, 104, 12); }
     
-      }
 
       .jumbotron { background-color: #1B2327;
                     height: 125px;  }
 
     
-      
       body {
         background-color: #12171A;
         font-family: Lato, Helvetica, Arial, sans-serif;
@@ -24,12 +27,7 @@
         background-attachment: fixed;
         background-position: 51% 50%;
         
-        overflow-x: hidden;
-       
-        
-       
-
-      }
+        overflow-x: hidden; }
       
       a {
         color: inherit;
@@ -52,27 +50,14 @@
         width: 100%;
         z-index: 1001;
         display: flex;
-  align-items: center;
-  justify-content: center 
-      }
+        align-items: center;
+        justify-content: center;  }
       
 
-
-      p3 { 
-
-      
-          font-family: 'Alex Brush', cursive; 
-          
-          font-size: 1.5em;
-          color: white;
-          text-shadow: 2px 1px rgb(133, 104, 12); }
-          
-
-    
-      .nav-wrapper {
-        margin: auto;
-        text-align: center;
-        width: 90%;
+  .nav-wrapper {
+  margin: auto;
+  text-align: center;
+  width: 90%;
       } @media(max-width: 768px) {
           .nav-wrapper {
             width: 90%;
@@ -176,148 +161,7 @@
         /* transition: 0s; */
       }
       
-      
-      
-      /*======================================================
-                          Mobile Menu Menu Icon
-        ======================================================*/
-      @media(max-width: 640px) {
-        .menuIcon {
-          cursor: pointer;
-          display: block;
-          position: fixed;
-          right: 30px;
-          top: 20px;
-          height: 23px;
-          width: 27px;
-          z-index: 1001;
-        }
-      
-        /* Icon Bars */
-        .icon-bars {
-          background: rgb(13, 26, 38);
-          position: absolute;
-          left: 1px;
-          top: 45%;
-          height: 2px;
-          width: 20px;
-          -webkit-transition: 0.4s;
-          transition: 0.4s;
-        } 
-      
-        .icon-bars::before {
-          background: rgb(13, 26, 38);
-          content: '';
-          position: absolute;
-          left: 0;
-          top: -8px;
-          height: 2px;
-          width: 20px;
-      /*     -webkit-transition: top 0.2s ease 0.3s;
-          transition: top 0.2s ease 0.3s; */
-          -webkit-transition: 0.3s width 0.4s;
-          transition: 0.3s width 0.4s;
-        }
-      
-        .icon-bars::after {
-          margin-top: 0px;
-          background: rgb(13, 26, 38);
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: -8px;
-          height: 2px;
-          width: 20px;
-      /*     -webkit-transition: top 0.2s ease 0.3s;
-          transition: top 0.2s ease 0.3s; */
-          -webkit-transition: 0.3s width 0.4s;
-          transition: 0.3s width 0.4s;
-        }
-      
-        /* Bars Shadows */
-        .icon-bars.overlay {
-          background: rgb(97, 114, 129);
-          background: rgb(183, 199, 211);
-          width: 20px;
-          animation: middleBar 3s infinite 0.5s;
-          -webkit-animation: middleBar 3s infinite 0.5s;
-        } @keyframes middleBar {
-            0% {width: 0px}
-            50% {width: 20px}
-            100% {width: 0px}
-          } @-webkit-keyframes middleBar {
-              0% {width: 0px}
-              50% {width: 20px}
-              100% {width: 0px}
-            }
-      
-        .icon-bars.overlay::before {
-          background: rgb(97, 114, 129);
-          background: rgb(183, 199, 211);
-          width: 10px;
-          animation: topBar 3s infinite 0.2s;
-          -webkit-animation: topBar 3s infinite 0s;
-        } @keyframes topBar {
-            0% {width: 0px}
-            50% {width: 10px}
-            100% {width: 0px}
-          } @-webkit-keyframes topBar {
-              0% {width: 0px}
-              50% {width: 10px}
-              100% {width: 0px}
-            }
-      
-        .icon-bars.overlay::after {
-          background: rgb(97, 114, 129);
-          background: rgb(183, 199, 211);
-          width: 15px;
-          animation: bottomBar 3s infinite 1s;
-          -webkit-animation: bottomBar 3s infinite 1s;
-        } @keyframes bottomBar {
-            0% {width: 0px}
-            50% {width: 15px}
-            100% {width: 0px}
-          } @-webkit-keyframes bottomBar {
-              0% {width: 0px}
-              50% {width: 15px}
-              100% {width: 0px}
-            }
-      
-      
-        /* Toggle Menu Icon */
-        .menuIcon.toggle .icon-bars {
-          top: 5px;
-          transform: translate3d(0, 5px, 0) rotate(135deg);
-          transition-delay: 0.1s;
-          transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-          background-color: white;
-        }
-      
-        .menuIcon.toggle .icon-bars::before {
-          top: 0;
-          transition-delay: 0.1s;
-          opacity: 0;
-          background: white;
-        }
-      
-        .menuIcon.toggle .icon-bars::after {
-          top: 10px;
-          transform: translate3d(0, -10px, 0) rotate(-270deg);
-          transition-delay: 0.1s;
-          transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-          color: white;
-        }
-      
-        .menuIcon.toggle .icon-bars.overlay {
-          width: 20px;
-          opacity: 0;
-          -webkit-transition: all 0s ease 0s;
-          transition: all 0s ease 0s;
-          background: white;
-        }
-      }
-      
-      
+    
       /*======================================================
                          Responsive Mobile Menu 
         ======================================================*/
@@ -422,28 +266,17 @@
     margin: auto;
     width: 380px;
     min-width: 200px;
-
-
-
-
-
     overflow: hidden;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     position: relative;
-    right: 3%;
-  
-
-
+    right: 5%;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     background-color: #37474F;
-
-
-    
 }
 
 .profile-card header {
@@ -616,7 +449,7 @@
   min-width: 220px;
 	margin:0 auto;
   position: relative;
-  right: 3%;
+  right: 5%;
  
 }
 
@@ -794,24 +627,17 @@ fieldset {
 }
 
 
-  
-
-
 /* STYLES SPECIFIC TO FOOTER  */
 
 
 
 .footer {
-        background-color: #12171A;
-     
+    background-color: #12171A;
     background-image: url('cog.png');
     background-repeat: no-repeat;
     background-position-x: 52%;
-    background-position-y: 3%;
-    
+    background-position-y: 3%;  }
 
-
-  }
   .footer .col {
     width: 220px;
     height: auto;
@@ -907,8 +733,3 @@ fieldset {
       width: 100%;
     }
   }
-
-
-  
-
- 
