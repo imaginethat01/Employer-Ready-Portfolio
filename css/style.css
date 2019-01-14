@@ -392,6 +392,7 @@
         background-color: #1B2327;
         padding-left: 8px;
         text-align: center;
+        position: fixed;
       }
       
       /* Optional: Style the caret down icon */
@@ -402,11 +403,6 @@
         color: white;
       }
 
-
-      
-    
-
-      
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
 
@@ -741,6 +737,7 @@ fieldset {
 	height: 250px;
 	z-index: 1;
 }
+@import url('https://fonts.googleapis.com/css?family=Croissant+One');
 
 .caption::before {
 	content: attr(data-title);
@@ -750,11 +747,11 @@ fieldset {
 	width: 100%;
 	height: 50%;
   padding: 10px;
-  font-family: 'Croissant One', cursive;
+  font-family: 'Croissant One';
 	font-size: 1.8em;
 	font-weight: 600;
-	line-height: 1.4em;
-	color: #086FA1;
+	line-height: 1.2em;
+	color: white;
 	background: #37474F;
 	overflow: hidden;
 	
@@ -776,8 +773,8 @@ fieldset {
   font-family: 'Poiret One', cursive;
 	font-size: .9em;
 	font-weight: 400;
-	line-height: 1.4em;
-	color: rgb(99, 91, 91);
+	line-height: 1.em;
+	color: white;
 	background: #222;
 	overflow: hidden;
 	
