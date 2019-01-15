@@ -23,11 +23,11 @@
         font-family: Lato, Helvetica, Arial, sans-serif;
 
         background-image: url('codingheroimage.jpg');
+        background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: 51%
-        
-        overflow-x: hidden; }
+        background-size: cover; 
+      
+      }
       
       a {
         color: inherit;
