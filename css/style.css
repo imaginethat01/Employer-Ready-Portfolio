@@ -14,8 +14,8 @@
     text-shadow: 2px 1px rgb(133, 104, 12); }
     
 
-      .jumbotron { background-color: #1B2327;
-                    height: 125px;  }
+      .jumbotron { background-color: #1b1b1b;
+                    height: 200px;  }
 
     
       body {
@@ -25,7 +25,7 @@
         background-image: url('codingheroimage.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: 51% 50%;
+        background-position: 51%
         
         overflow-x: hidden; }
       
@@ -40,8 +40,10 @@
       /*======================================================
                                 Navbar
         ======================================================*/
+
+       
       #navbar {
-        background: #263238;
+        background: #1b1b1b; 
         color: #80CBC4;
         position: fixed;
         top: 0;
@@ -71,7 +73,7 @@
       
       .logo {
     
-        float: left;
+        float: right;
         margin-left: 28px;
         
         height: 60px;
@@ -262,21 +264,22 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    height: 420px;
+    height: 480px;
     margin: auto;
-    width: 380px;
-    min-width: 200px;
+    position: relative;
+    top:8%;
     overflow: hidden;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    position: relative;
-    right: 5%;
+    
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    background-color: #37474F;
+    background-color: #263238;
+     
+
 }
 
 .profile-card header {
@@ -445,18 +448,14 @@
 
 .emailform {
   text-align: center;
-  width:380px;
-  min-width: 220px;
-	margin:0 auto;
-  position: relative;
-  right: 5%;
- 
+  margin:0 auto;
+
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
-	background: #37474F;
+  background-color: #263238;   
 	padding:25px;
 	margin:50px 0;
 }
@@ -498,7 +497,7 @@ fieldset {
 }
 
 #contact textarea {
-	height:200px;
+	height:125px;
 	max-width: 95%;
   resize:none;
 }
@@ -557,7 +556,7 @@ fieldset {
 .galleryItem img {
 	width: 100%;
 	height: 100%;
-  border: solid 10px #37474F;
+  border: outset 6px #1b1b1b;
 }
 
 .caption {
@@ -585,7 +584,7 @@ fieldset {
 	font-weight: 600;
 	line-height: 1.2em;
 	color: white;
-	background: #37474F;
+	background: #263238;
 	overflow: hidden;
 	
 	-webkit-transition: all 0.3s ease;
@@ -608,7 +607,7 @@ fieldset {
 	font-weight: 400;
 	line-height: 1.em;
 	color: white;
-	background: #222;
+	background: #263238;
 	overflow: hidden;
 	
 	-webkit-transition: all 0.3s ease;
@@ -628,14 +627,11 @@ fieldset {
 
 
 /* STYLES SPECIFIC TO FOOTER  */
-
-
-
 .footer {
     background-color: #12171A;
     background-image: url('cog.png');
     background-repeat: no-repeat;
-    background-position-x: 52%;
+    background-position-x: 50%;
     background-position-y: 3%;  }
 
   .footer .col {
