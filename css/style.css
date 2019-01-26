@@ -123,6 +123,11 @@
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
       }
+     @media(max-width: 638px) {
+      #navbar li a {
+        display: none;
+      }
+    } 
       
       #navbar li a:hover {
         /* border-bottom: 1px solid rgb(28, 121, 184); */
