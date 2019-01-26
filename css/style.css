@@ -57,6 +57,7 @@
       
 
   .nav-wrapper {
+  position: absolute;  
   margin: auto;
   text-align: center;
   width: 90%;
