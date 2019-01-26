@@ -60,10 +60,10 @@
   position: absolute;  
   margin: auto;
   text-align: center;
-  width: 90%;
+  width: 100%;
       } @media(max-width: 768px) {
           .nav-wrapper {
-            width: 90%;
+            width: 100%;
           }
         } @media(max-width: 638px) {
             .nav-wrapper {
