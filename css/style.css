@@ -25,8 +25,9 @@
         background-image: url('codingheroimage.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover; 
-      
+        background-size: cover;
+     
+    
       }
       
       a {
@@ -188,14 +189,14 @@
         height: 100vh;
         -webkit-transition: transform 0.2s ease-out;
         transition: transform 0.2s ease-out;
-        z-index: 1000;
+        z-index: 2;
       }
       
 
       * Fixed sidenav, full height */
       .sidenav {
         height: 100%;
-        width: 200px;
+        width: 100%;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -203,21 +204,28 @@
         background-color: #111;
         overflow-x: hidden;
         padding-top: 20px;
+        
+        
       }
+
       
       /* Style the sidenav links and the dropdown button */
       .sidenav a, .dropdown-btn {
         padding: 6px 8px 6px 16px;
         text-decoration: none;
         font-size: 20px;
-        color: #818181;
+     
         display: block;
         border: none;
         background: none;
         width:100%;
-        text-align: left;
+        text-align: center;
         cursor: pointer;
         outline: none;
+        position: relative;
+        background-color: black;
+        color: #80CBC4;
+
       }
       
       /* On mouse-over */
@@ -234,17 +242,29 @@
       
       /* Add an active class to the active dropdown button */
       .active {
-        background-color: #263238;
+        background-color: black;
         color: white;
+        text-align: center;
+       
+        
       }
       
       /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
       .dropdown-container {
         display: none;
-        background-color: #1B2327;
-        padding-left: 8px;
+        background-color:  black;
+        float: center;
         text-align: center;
         position: fixed;
+      
+      }
+
+
+      .dropped-container {
+
+        position: relative;
+        right: 21%;
+      
       }
       
       /* Optional: Style the caret down icon */
@@ -257,6 +277,10 @@
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300);
+
+ /*======================================================
+                        PROFILE BIO SECTION
+        ======================================================*/
 
 .profile-card * ,
 .profile-card *:before ,
@@ -447,7 +471,9 @@
     transform: translateY(0);
 }
 
-
+ /*======================================================
+                        Contact Form Section
+        ======================================================*/
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
@@ -546,6 +572,10 @@ fieldset {
 }
 
 
+ /*======================================================
+                       Project Gallery Section
+        ======================================================*/
+
 
 .galleryItem {
 	display: inline-block;
@@ -634,6 +664,8 @@ fieldset {
 
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
+
+   
     background-color: #12171A;
     background-image: url('cog.png');
     background-repeat: no-repeat;

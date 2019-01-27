@@ -45,6 +45,7 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
         
+   
 (function($){
     // variables
     elementWidth = $('ul').width(),
